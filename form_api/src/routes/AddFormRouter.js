@@ -5,7 +5,7 @@ import { Addform } from "../model/AddFormModel.js";
 export const AddFormRouter = express.Router();
 
 // POST from client | CREATE in db
-AddFormRouter.post("/api/addform", (req, res) => {
+AddFormRouter.post("/", (req, res) => {
   // the data comes at body of request send by client
   const task = req.body;
 

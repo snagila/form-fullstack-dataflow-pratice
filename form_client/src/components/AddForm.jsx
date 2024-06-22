@@ -9,7 +9,7 @@ const AddForm = () => {
     phone: "",
     email: "",
   };
-  const [formData, setFormData] = useState(initialState);
+  const [formData, setFormData] = useState({});
   const { name, address, phone, email } = formData;
 
   const handleOnChange = (e) => {
@@ -21,6 +21,7 @@ const AddForm = () => {
     e.preventDefault();
     // this line of code sends the formdata to the axios as this function is created in axios
     const result = await createTask(formData);
+    setFormData(initialState);
   };
   return (
     <>

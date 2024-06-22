@@ -9,7 +9,7 @@ export const createTask = (formData) => {
   const response = axios
     .post(API_URL, formData)
     .then((res) => res.data)
-    .catch((error) => console.log(error.message));
+    .catch((error) => error);
 
   // this response is the promise given to the user for async program
   return response;
