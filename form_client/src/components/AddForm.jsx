@@ -4,7 +4,6 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 const AddForm = () => {
   return (
     <>
-      {" "}
       <Form className="container">
         <Row>
           <Col>
